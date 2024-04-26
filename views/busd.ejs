@@ -80,7 +80,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            
+                              
+                                
                             </div>
                         </div>
                     </div>        </div>
@@ -209,14 +210,14 @@
                             <ul class="vertical-nav-menu">
                                 <li class="app-sidebar__heading">Dashboards</li>
                                 <li>
-                                    <a href="/" class="mm-active">
+                                    <a href="/">
                                         <i class="metismenu-icon pe-7s-rocket"></i>
                                         Dashboard
                                     </a>
                                 </li>
                                 <li class="app-sidebar__heading">Investments</li>
                                 <li  >
-                                    <a href="/invest">
+                                    <a href="/invest"  class="mm-active">
                                         <i class="metismenu-icon pe-7s-plus"></i>
                                         Make an Investment
                                     </a>
@@ -249,7 +250,7 @@
                                         </i>Withdraw
                                     </a>
                                 </li>
-                                
+                              
                                 <li class="app-sidebar__heading">Log Out</li>
                                 <li>
                                     <a href="/users/logout">
@@ -260,132 +261,115 @@
                             </ul>
                         </div>
                     </div>
-                </div> <div class="app-main__outer">
-                    <div class="app-main__inner">
-                        <div class="app-page-title">
-                            <div class="page-title-wrapper">
-                                <div class="page-title-heading">
-                                    <div class="page-title-icon">
-                                        <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                                        </i>
+                </div>
+                 <div class="app-main__outer">
+                  <div class="app-main__inner">
+                      <div class="row">
+                        <div class="col-xl-10 col-lg-11 col-md-12 ml-auto"  style="height:90vh;">
+                          <div class="row align-items-center mb-5">
+                            <div class="col-xl-10 mt-5">
+                              <div class="card rounded">
+                                <div class="card-body">
+                                  <h5 class="text-primary text-info font-weight-bold mb-4">Complete transaction</h5>
+                                  <ul class="list-inline text-center py-3">
+                                    <li class="list-inline-item mr-4">
+                                      <a href="#">
+                                        <i class="fas fa-pencil-alt text-success"></i>
+                                        <span class="h6 text-info">Status: </span><span class="h6 text-primary"> pending</span>
+                                      </a>
+                                    </li>
+                                    
+                                    <li class="list-inline-item">
+                                      <a href="#">
+                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                        <span class="h6 text-info">Level: </span><span class="h6 text-primary"> Checkout</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                  <form>
+                                    <div class="form-group">
+                                        <p class="font-weight-bold text-primary" id="counter">Expires in 721 Secs</p>
+                                      <button type="button" class="btn btn-md text-uppercase font-weight-bold text-light bg-primary py-2 mb-5" id="refresh">refresh time</button>
                                     </div>
-                                    <div>Welcome Back, <%= " " 
-                                        + user.first_name %>
-                                        <div class="page-title-subheading"> 
-                                            General overview of earnings, transaction and profits. 
+                                  </form>
+                                 
+                                    <div class="col-12">
+                                      <div >
+                                        <img src="/ltc.png" alt="" class="d-block mb-4" width="300px"  height="300px">
+                                        <div class="form-group">
+                                          <input
+                                            type="text"
+                                            spellcheck="false"
+                                            id="address"
+                                            name="address"
+                                            class="form-control"
+                                            value="ltc1q097pdh6dc3f4v6qa42fchnmp2zt5vfrf4ggvnj"
+                                            style="opacity: 0; margin-bottom: -4px;"
+                                          />
                                         </div>
+                                        <p class="font-weight-bold d-block" style="color: black;" >ltc1q097pdh6dc3f4v6qa42fchnmp2zt5vfrf4ggvnj</p>
+                                        <p class="font-weight-bold text-primary">Transmit Payment to the above LTC wallet Address to complete  transaction.</p>
+                                        <span><button type="button" class="btn text-uppercase font-weight-bold text-light bg-primary py-2 mb-5" id="copy">copy Address</button></span>
                                     </div>
+                                  </div>
                                 </div>
-                                <!-- <div class="page-title-actions">
-                                    <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
-                                        <i class="fa fa-star"></i>
-                                    </button>
-                                    <div class="d-inline-block dropdown">
-                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
-                                            <span class="btn-icon-wrapper pr-2 opacity-7">
-                                                <i class="fa fa-business-time fa-w-20"></i>
-                                            </span>
-                                            Buttons
-                                        </button>
-                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a href="javascript:void(0);" class="nav-link">
-                                                        <i class="nav-link-icon lnr-inbox"></i>
-                                                        <span>
-                                                            Inbox
-                                                        </span>
-                                                        <div class="ml-auto badge badge-pill badge-secondary">86</div>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="javascript:void(0);" class="nav-link">
-                                                        <i class="nav-link-icon lnr-book"></i>
-                                                        <span>
-                                                            Book
-                                                        </span>
-                                                        <div class="ml-auto badge badge-pill badge-danger">5</div>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="javascript:void(0);" class="nav-link">
-                                                        <i class="nav-link-icon lnr-picture"></i>
-                                                        <span>
-                                                            Picture
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a disabled href="javascript:void(0);" class="nav-link disabled">
-                                                        <i class="nav-link-icon lnr-file-empty"></i>
-                                                        <span>
-                                                            File Disabled
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>  -->  </div> 
-                        </div>            <div class="row">
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card mb-3 widget-content bg-midnight-bloom">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Total Deposit</div>
-                                            <div class="widget-subheading">Available equity  </div>
-                                        </div>
-                                        <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span>$ <%= " " + user.availbalance %> </span></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a href="/deposit-success" class=" col-7 btn text-center text-uppercase font-weight-bold text-light py-2  mx-auto mb-4" style="background-color: #f7931a; color: white;">Confirm payment</a>
+                              </div>
                             </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card mb-3 widget-content bg-arielle-smile">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Total withdrawal</div>
-                                            <div class="widget-subheading">Total Obtained Profit</div>
-                                        </div>
-                                        <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span>$ <%= " " + user.withdrawals %> </span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card mb-3 widget-content bg-grow-early">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Plan Type</div>
-                                            <div class="widget-subheading">Current active plan</div>
-                                        </div>
-                                        <div class="widget-content-right">
-                                            <div class="widget-numbers text-white"><span> <%= " " + user.plantype %> </span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card mb-3 widget-content bg-premium-dark">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Number of referrals </div>
-                                            <div class="widget-subheading">Available pending deposit</div>
-                                        </div>
-                                        <div class="widget-content-right">                 <div class="widget-numbers text-warning"><span><%= " " + user.refaralsbonus %></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                          </div>
                         </div>
-                        <br>
-                    </div>                
-                </div>           
-    </div>
-<script type="text/javascript" src="./assets/scripts/main.js"></script>
-<script src="./assets/scripts/dashboard.js"></script>
-<% include ./partials/chat %>
-</body>
-</html>
+                      </div>
+                    </div>
+                </div>
+                    
+     </div>
+ <script type="text/javascript" src="./assets/scripts/main.js"></script>
+<script>
+
+counter = document.getElementById("counter");
+var num = 722; 
+function counting() {
+      if(num === 0){
+        counter.innerText = "";
+    }else{
+        num = num - 1;
+        counter.innerText = " Expires in " + num + " Secs"
+    }
+}
+
+
+
+
+refresh = document.getElementById("refresh");
+refresh.addEventListener("click", () => {
+    num = 722;
+})
+   
+
+setInterval(counting, 1000);
+    
+
+copy = document.getElementById("copy");
+var copyText = document.getElementById("address");
+copy.addEventListener("click", () =>
+ {
+    copyText.select();
+    document.execCommand("copy")
+  }
+
+)
+
+copyText.addEventListener("click", (e)=>{
+    e.preventDefault();
+})
+
+//  show the correct thing when  user tries to withdraw
+let balance = document.getElementById('balance-amt');
+let starter = document.getElementById('starter');
+let starterLow = document.getElementById('staterlow')
+
+
+
+
+</script></body>
+ </html>

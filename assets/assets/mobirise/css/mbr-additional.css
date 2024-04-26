@@ -668,7 +668,7 @@ blockquote {
 .xdsoft_datetimepicker .xdsoft_calendar td:hover,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
   color: #ffffff !important;
-  background: #6592e6 !important;
+  background: #3f58e4 !important;
   box-shadow: none !important;
 }
 .lazy-bg {
@@ -1107,7 +1107,7 @@ a {
 .cid-stM33JDkCw .mbr-iconfont {
   display: block;
   font-size: 5rem;
-  color: #6592e6;
+  color: #3f58e4;
   margin-bottom: 2rem;
 }
 .cid-stM33JDkCw .card-wrapper {
@@ -1353,7 +1353,7 @@ a {
   margin-right: 0.6rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  border: 2px solid #6592e6;
+  border: 2px solid #3f58e4;
   transition: all 0.3s;
 }
 .cid-stAxtczc5u .social-row .soc-item .mbr-iconfont {
@@ -1361,11 +1361,11 @@ a {
   display: flex;
   justify-content: center;
   align-content: center;
-  color: #6592e6;
+  color: #3f58e4;
   font-size: 1.5rem;
 }
 .cid-stAxtczc5u .social-row .soc-item:hover {
-  background-color: #6592e6;
+  background-color: #3f58e4;
 }
 .cid-stAxtczc5u .social-row .soc-item:hover .mbr-iconfont {
   color: #ffffff;
@@ -1687,6 +1687,39 @@ a {
     padding-left: 0;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+}
+.cid-sbjC4xk2AM {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-sbjC4xk2AM .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.cid-sbjC4xk2AM .icon-box {
+  background: #4f19e4;
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cid-sbjC4xk2AM .mbr-iconfont {
+  font-size: 2rem;
+  color: #ffffff;
+}
+@media (max-width: 991px) {
+  .cid-sbjC4xk2AM .card {
+    margin-bottom: 2rem;
+  }
+  .cid-sbjC4xk2AM .card-wrapper {
+    margin-bottom: 2rem;
   }
 }
 .cid-stAxaKDqvg .navbar.navbar-short {
@@ -3703,7 +3736,7 @@ a {
 .cid-sbirFyERh0 .mbr-iconfont {
   font-size: 1.4rem !important;
   font-family: 'Moririse2' !important;
-  color: #6592e6;
+  color: #3f58e4;
   margin-left: 1rem;
 }
 .cid-sbirFyERh0 .panel-group {
